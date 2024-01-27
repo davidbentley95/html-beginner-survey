@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chess Player Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Chess Player Survey</h1>
+        <p id="description">Let us know your chess player profile!</p>
+    </div>
+    <form action="" method="post" id="survey-form">
+        <fieldset>
+            <legend>Player details:</legend>
+            <label id="name-label" for="name">Name
+                <input type="text" id="name" required placeholder="Enter your name">
+            </label>
+            <label id="email-label" for="email">Email
+                <input type="email" id="email" required placeholder="Enter your email">
+            </label>
+            <label id="number-label" for="number">Age(optional)
+                <input type="number" id="number" min="0" max="120" placeholder="Enter your age">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Who is your favourite chess legend?</legend>
+            <label id="dropdown-label" for="dropdown">
+                <select id="dropdown">
+                    <option disabled selected>Select an option</option>
+                    <option>Magnus Carlsen</option>
+                    <option>Bobby Fischer</option>
+                    <option>Garry Kasparov</option>
+                    <option>Paul Morphy</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Pick your favourite starting color:</legend>
+            <label for="white-pieces">
+                <input id="white-pieces" type="radio" name="color-preference" value="white">White Pieces
+            </label>
+            <label for="black-pieces">
+                <input id="black-pieces" type="radio" name="color-preference" value="black">Black Pieces
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Describe your playing style:</legend>
+            <label for="aggressive-style">
+                <input type="checkbox" value="aggressive" id="aggressive-style"> Aggressive or Attacking Style
+            </label>
+            <label for="defensive-style">
+                <input type="checkbox" value="defensive" id="defensive-style"> Defensive or Solid Style
+            </label>
+            <label for="positional-style">
+                <input type="checkbox" value="positional" id="positional-style"> Positional Style
+            </label>
+            <label for="tactical-style">
+                <input type="checkbox" value="tactical" id="tactical-style"> Tactical Style
+            </label>
+            <label for="dynamic-style">
+                <input type="checkbox" value="dynamic" id="dynamic-style"> Dynamic Style
+            </label>
+            <label for="endgame-specialist">
+                <input type="checkbox" value="endgame" id="endgame-specialist"> Endgame Specialist
+            </label>
+            <label for="universal-style">
+                <input type="checkbox" value="universal" id="universal-style"> Universal Style
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="additional-comments">
+                <textarea name="additional-comments" id="additional-comments" cols="65" rows="7" placeholder="Tell us why you love chess"></textarea>
+            </label>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-color: #31304D;
+    color: #F0ECE5;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    text-align: center;
+}
+
+input, select, textarea, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #161A30;
+    position: relative;
+    padding: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 5px;
+}
+
+legend {
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 1.15rem;
+    color:blanchedalmond;
+}
+
+fieldset {
+    border: 0;
+    padding-left: 25px; 
+}
+
+#name, #email, #number, #additional-comments {
+    display: block;
+    width: 90%;
+    margin-top: 5px;
+}
+
+button {
+    font-size: 1rem;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-radius: 10%;
+    width: 30%;
+}
